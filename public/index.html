@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6c4cf1">
+  <meta name="description" content="ПозичКа — шкільна система обміну речами між учнями. Забув? Позич за хвилину!">
+  <title>ПозичКа — Забув? Позич за хвилину!</title>
+  <link rel="icon" href="/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main id="app" class="app" aria-live="polite">
+    <div class="splash"><img src="/logo.svg" alt="" width="96" height="96"><p>Завантаження…</p></div>
+  </main>
+
+  <nav id="nav" class="nav hidden" aria-label="Головне меню">
+    <a href="#/" data-nav="home"><span class="ico">🏠</span><small>Головна</small></a>
+    <a href="#/search" data-nav="search"><span class="ico">🔍</span><small>Пошук</small></a>
+    <a href="#/add" data-nav="add" class="plus" aria-label="Додати річ"><span>+</span></a>
+    <a href="#/qr" data-nav="qr"><span class="ico">📷</span><small>QR</small></a>
+    <a href="#/profile" data-nav="profile"><span class="ico">👤<b class="badge hidden" id="nav-badge"></b></span><small>Профіль</small></a>
+  </nav>
+
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

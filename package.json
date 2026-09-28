@@ -1,0 +1,23 @@
+{
+  "name": "pozychka",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ПозичКа — шкільна система обміну речами між учнями. Забув? Позич за хвилину!",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "reset": "node -e \"for (const f of ['pozychka.db','pozychka.db-wal','pozychka.db-shm']) require('fs').rmSync(f,{force:true}); console.log('База видалена — під час наступного запуску створиться заново')\""
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "better-sqlite3": "^13.0.3",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "html5-qrcode": "^2.3.8",
+    "multer": "^2.4.0",
+    "qrcode": "^1.5.4"
+  }
+}
